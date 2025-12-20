@@ -8,6 +8,13 @@ class AccessModifier{
     protected int num3=60;
     //internal - accessible in this project 
     internal int num4 = 80;
+    // protected internal – accessible either
+    // 1) in the same project OR
+    // 2) in derived classes (even outside project)
+    protected internal int num5 = 100;
+    // private protected – accessible only in
+    // derived classes within the same project
+    private protected int num6 = 120;
     private void ShowPrivate(){
         Console.WriteLine("The private number is: " + num2); //40
     }
