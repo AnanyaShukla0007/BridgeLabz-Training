@@ -200,3 +200,29 @@
 * Validated user inputs and handled errors
 
 * Pushed all C# array programs to GitHub
+
+# 📅 Day 7 — December 24, 2025 — C# Methods Lab Practice ⚙️
+## 🔧 Topic: Methods in C#
+## 🧩 What I Learned
+
+* Basics of methods (functions) in C#
+
+* Method syntax, parameters, and return types
+
+* Difference between void and return-type methods
+
+* Calling user-defined methods from Main()
+
+* Code reusability and better program structure
+
+## 🧪 Tasks Completed
+
+* Created methods for arithmetic operations
+
+* Used methods for Even/Odd, Prime, Palindrome checks
+
+* Implemented input validation inside methods
+
+* Reduced code duplication using methods
+
+* Pushed all C# methods programs to GitHub
