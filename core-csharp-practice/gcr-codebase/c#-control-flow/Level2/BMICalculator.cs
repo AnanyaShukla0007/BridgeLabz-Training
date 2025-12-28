@@ -1,5 +1,5 @@
 using System;
-class BMI
+class BMICalculator
 {
     static void Main()
     {
