@@ -6,118 +6,336 @@ Each entry includes concepts covered and skills practiced.
 
 ---
 
-## Day 1: December 17, 2025 - GitHub Setup and Java Basics 📅
-**Topic:** GitHub Repository Setup, Folder Structure Organization 📁  
-**What I Learnt:** 📚
-- Setting up a GitHub repository for project tracking. 🔄
-- Creating and organizing folder structures for Java and C# codebases. 🗂️
-- Basic Git commands for version control (init, add, commit, push). 💻
+## 📅 Day 1 — GitHub Setup & Repository Organization
+
+**Date:** 17/12/2025
+
+### 🧩 What I Learned
+
+* GitHub repository creation
+* Folder structure for Java & C# projects
+* Basic Git commands
+
+### 🧭 What’s Next
+
+Introduction to .NET ecosystem and C# basics.
 
 ---
 
-## Day 2: December 18, 2025 - Introduction to .NET and C# 🔧
-**Topic:** .NET Framework, C# Syntax, Java to C# Conversion 🛠️  
-**What I Learnt:** 📚
-- Basics of .NET ecosystem and C# language. 🌐
-- Key differences between Java and C# (e.g., Main method, using statements, Console I/O). 🔄
-- Converting Java programs to C# equivalents, handling syntax changes. 🔄
-- Building and running C# programs with dotnet CLI. ▶️
+## 📅 Day 2 — Introduction to .NET & C#
+
+**Date:** 18/12/2025
+
+### 🧩 What I Learned
+
+* .NET ecosystem overview
+* C# syntax and structure
+* Java vs C# differences
+* Console input/output
+* dotnet CLI execution
+
+### 🧭 What’s Next
+
+C# data types and operators.
 
 ---
 
-## Day 3: December 19, 2025 - Introduction to basics of C# 💻📁            
-**Topic:** Operators, Data Types and Type Conversion 🔧              
-**What I Learnt:** 📚           
-- Learned basic operators in C# such as arithmetic, relational, and logical operators. ➕➖       
-- Understood commonly used data types like int, double, bool, char, and string. 🔢🔤            
-- Studied implicit and explicit type conversion and their practical use cases. 🔄                 
-- Hands-on practice using variables, data types, operators, and access modifiers. ✅              
+## 📅 Day 3 — C# Programming Fundamentals
+
+**Date:** 19/12/2025
+
+### 🧩 What I Learned
+
+* Primitive data types
+* Arithmetic, relational, logical operators
+* Type conversion
+* Variables and access modifiers
+
+### 🧭 What’s Next
+
+Memory concepts and execution model.
 
 ---
 
-## Day 4: December 19, 2025 – Introduction to Basics of C# 💻     
-**Topic:**  Operators, Data Types, Type Conversion & Memory Concepts 🔧   
-**What I Learnt:** 📚        
-- Gained understanding of C# program execution and memory areas. 🧠     
-- Learned about Stack memory, Heap memory, and Static memory (Method Area). 📦     
-- Understood static vs non-static members and their execution order. ⚙️     
-- Learned about constructors and their role in object initialization. 🏗️         
-- Studied access modifiers: public, private, protected, internal, protected internal, private protected 🔐       
+## 📅 Day 4 — Memory Concepts & Execution Model
+
+**Date:** 20/12/2025
+
+### 🧩 What I Learned
+
+* Stack, Heap, Static memory
+* Static vs instance members
+* Constructors
+* Access modifiers
+
+### 🧭 What’s Next
+
+Control flow statements.
 
 ---
 
-## Day 5: December 22, 2025 – C# Control Flow Statements 🔁       
-**Topic:** Decision Making and Looping Constructs in C#          
-**What I Learnt:** 📚          
-- Understood the role of control flow statements in program execution. 🚦       
-- Learned about boolean values and boolean expressions. ✔️❌          
-- Used logical operators (&&, ||, !) in conditions. 🔗            
-- Implemented conditional statements: if, else if, else 🧩           
-- Learned looping constructs: for loop, while loop 🔄          
-- Understood the use of break and continue to control loop flow. ⛔➡️        
-- Learned and practiced the switch statement for multi-way decision making. 🔀         
+## 📅 Day 5 — Control Flow Statements
+
+**Date:** 22/12/2025
+
+### 🧩 What I Learned
+
+* Boolean expressions
+* Logical operators
+* if-else, switch
+* for and while loops
+* break and continue
+
+### 🧭 What’s Next
+
+Arrays in C#.
 
 ---
 
-## Day 6: December 23, 2025 – Arrays in C# 🧮          
-**Topic:** Single & Multi-Dimensional Arrays            
-**What I Learnt:** 📚         
-- Learned the basics of arrays and their importance in C#. 📦       
-- Created and accessed single-dimensional arrays. 🔢           
-- Used for loops to iterate through array elements. 🔁        
-- Modified array values dynamically. ✏️           
-- Used the Length property to avoid hard-coded values. 📏          
-- Learned multi-dimensional and 2D arrays (matrices). 🔢🔢      
-- Accessed multi-dimensional arrays using nested loops. 🔄🔄            
-- Followed best coding practices such as proper naming, indentation, comments, and input validation. ✅
+## 📅 Day 6 — Arrays in C#
+
+**Date:** 23/12/2025
+
+### 🧩 What I Learned
+
+* Single-dimensional arrays
+* Loop traversal
+* Dynamic updates
+* Multi-dimensional arrays
+
+### 🧭 What’s Next
+
+Methods and modular programming.
 
 ---
 
-## Day 7: December 24, 2025 - Methods in C# 📅                   
-**Topic:** Methods and Function Implementation 🔧                  
-**What I Learnt:** 📚                 
-- Understood the concept of methods in C# ✅                       
-- Learned method syntax and structure 🔢🔢               
-- Created user-defined methods  📦                           
-- Learned how to call methods from the Main() method ✏️                       
-- Solved basic logical problems by dividing code into methods 📏                            
+## 📅 Day 7 — Methods & Modular Programming
+
+**Date:** 24/12/2025
+
+### 🧩 What I Learned
+
+* Method declaration and invocation
+* User-defined methods
+* Modular problem solving
+
+### 🧭 What’s Next
+
+String handling and manipulation.
 
 ---
 
-## Day 8: December 26, 2025- Strings in C# 📅
-**Topic:** String Handling and Operations 🧵               
-**What I Learnt:** 📚          
-- Introduction to strings in C#. 🧩        
-- Declaring and initializing strings. 🔄         
-- Taking string input from the user. 📦          
-- Accessing characters in a string using index. ✔️❌        
-- Using string properties and methods such as:Length, ToUpper(), ToLower(), Equals(). 🔗           
-- Performed basic string operations: Comparing two strings, Reversing a string, Checking for palindrome strings, Counting vowels and consonants. 🔐
-- Implemented programs without using built-in shortcuts where required. 📏         
-- Improved understanding of string manipulation and logic building. ✅
+## 📅 Day 8 — String Handling
+
+**Date:** 26/12/2025
+
+### 🧩 What I Learned
+
+* String input and indexing
+* String methods
+* Reverse and palindrome logic
+* Character counting
+
+### 🧪 Scenario-Based Problems
+
+* Sentence Formatter
+* Paragraph Analyzer
+
+### 🧭 What’s Next
+
+Scenario-based problem solving.
 
 ---
 
-## Day 9: December 29, 2025-  Scenario-Based Problem Solving 📅                           
-**Topic:** Logical Thinking & Real-World Scenarios 💡                    
-**What I Learnt:** 📚                       
-- Understood how to analyze scenario-based problem statements. 🔁                                   
-- Broke real-world problems into smaller logical steps.🚦                           
-- Applied conditional statements, loops, arrays, strings, and methods together.🧩                               
-- Improved problem-solving and debugging skills in C#. ✅                               
-- Temperature Analyzer: Analyzed temperature data and performed calculations based on conditions. 📦                       
-- Snake and Ladder Game: Implemented game logic using loops, conditions, arrays, and random numbers. 🧠                        
-- Sentence Formatter: Worked with strings to format and analyze sentences. 🔗                                      
-- Student Score Card: Calculated total, average, highest, and lowest scores using arrays. 🔁                                                
+## 📅 Day 9 — OOP Fundamentals & Scenario-Based Logic
+
+**Date:** 29/12/2025
+
+### 🧩 What I Learned
+
+* Classes and Objects
+* Combining logic constructs
+
+### 🧪 Scenario-Based Problems
+
+* Temperature Analyzer
+* Student Score Card
+* Snake & Ladder
+
+### 🧭 What’s Next
+
+Mini console applications and constructors.
 
 ---
 
-## Day 10: December 30, 2025-  Advanced Scenario-Based Applications 📅                               
-**Topic:** Mini Console Applications in C# 🖥️                           
-**What I Learnt:** 📚                              
-- Designed mini console-based applications. 🔗                                  
-- Implemented role-based logic and validation. ✅                            
-- Applied modular programming for better structure. 📦                           
-- Strengthened understanding of real-world application flow. 🧩                           
-- Library Management System: Implemented book listing, availability status, and role-based operations. 🔁                             
-- Student Quiz Grader: Compared student answers with correct answers. Calculated scores and displayed feedback. 🧠
+## 📅 Day 10 — C# Constructors, Instance vs. Class Variables, Access Modifiers Concepts
+
+**Date:** 30/12/2025
+
+### 🧩 What I Learned
+
+* Modular console applications
+* Input validation
+* Constructors
+* Instance vs class variables
+* Access modifiers
+
+### 🧪 Scenario-Based Problems
+
+* Library Management System
+* EduQuiz – Student Quiz Grader
+
+### 🧭 What’s Next
+
+Keywords and type checking.
+
+---
+
+## 📅 Day 11 — this, sealed, static key words and is operator Content
+
+**Date:** 31/12/2025
+
+### 🧩 What I Learned
+
+* Usage of this keyword to refer to the current object and resolve naming conflicts
+* Understanding static keyword for class-level variables and methods
+* Purpose and use cases of the sealed keyword in classes and methods
+* Type checking and safe casting using the is operator
+* Differences between instance members and static members
+
+### 🧪 Scenario-Based Problems
+
+* Bank Account Manager
+* Mathematical Utility Class
+* Invoice Generator for Freelancers
+
+### 🧭 What’s Next
+
+Object modeling and design principles.
+
+---
+
+## 📅 Day 12 — Object Modeling, Class Diagram
+
+**Date:** 01/01/2026
+
+### 🧩 What I Learned
+
+* Concept of object modeling using real-world entities
+* Designing class diagrams with attributes and method
+* Identifying relationships between classes
+* Mapping problem requirements to class structures
+* Understanding how design improves code clarity and maintainability
+
+### 🧪 Scenario-Based Problems
+
+* Cafeteria Menu App
+
+### 🧭 What’s Next
+
+Inheritance and hierarchy-based design.
+
+---
+
+## 📅 Day 13 — Inheritance & Loop-Based Scenarios
+
+**Date:** 02/01/2026
+
+### 🧩 What I Learned
+
+* Inheritance concepts
+* Code reuse
+
+### 🧪 Scenario-Based Problems
+
+* Bus Route Distance Tracker
+* Festival Lucky Draw
+
+### 🧭 What’s Next
+
+Encapsulation and polymorphism.
+
+---
+
+## 📅 Day 14 — Encapsulation, Abstraction & Polymorphism
+
+**Date:** 05/01/2026
+
+### 🧩 What I Learned
+
+* Encapsulation using properties
+* Interfaces and abstract classes
+* Runtime polymorphism
+
+### 🧪 Scenario-Based Problems
+
+* Hospital Patient Management System
+
+### 🧭 What’s Next
+
+Interface-based design with real-world cases.
+
+---
+
+## 📅 Day 15 — Interface-Based Design
+
+**Date:** 06/01/2026
+
+### 🧩 What I Learned
+
+* Interface implementation
+* Polymorphism using `is`
+* Array-based object handling
+
+### 🧪 Scenario-Based Problems
+
+* Vehicle Rental Application
+* Bird Sanctuary System
+* Customer Service Call Log Manager
+
+### 🧭 What’s Next
+
+Data Structures – Linked Lists.
+
+---
+
+## 📅 Day 16 — Data Structures: Linked Lists
+
+**Date:** 07/01/2026
+
+### 🧩 What I Learned
+
+* Singly Linked List
+* Doubly Linked List
+* Circular Linked List
+
+### 🧪 Scenario-Based Problems
+
+* Employee Wage Computation Program
+
+### 🧭 What’s Next
+
+Stack, Queue, and Hashing.
+
+---
+
+## 📅 Day 17 — Stack, Queue & Hashing
+
+**Date:** 08/01/2026
+
+### 🧩 What I Learned
+
+* Stack (LIFO)
+* Queue (FIFO)
+* HashMap
+* Hashing functions
+
+### 🧪 Scenario-Based Problems
+
+* Smart Home Automation System
+
+### 🧭 What’s Next
+
+Sorting Algorithm.
+
+---
