@@ -339,3 +339,72 @@ Stack, Queue, and Hashing.
 Sorting Algorithm.
 
 ---
+
+## 📅 Day 18 — Sorting Algorithms
+
+**Date:** 09/01/2026
+
+### 🧩 What I Learned
+
+* Sorting algorithms and their use cases
+* Comparison-based sorting techniques
+* Step-by-step working of sorting logic
+
+### 🧪 Scenario-Based Problems
+
+* ATM Dispenser Logic
+* FitTrack – Fitness Tracker
+
+### 🧭 What’s Next
+
+Searching algorithms and file handling concepts.
+
+---
+
+## 📅 Day 19 — Searching Algorithms & I/O Utilities
+
+**Date:** 10/01/2026
+
+### 🧩 What I Learned
+
+* Linear Search
+* Binary Search
+* Difference between linear and binary search
+* StringBuilder and StringBuffer
+* Reading input using BufferedReader, FileReader, InputStreamReader
+
+### 🧪 Scenario-Based Problems
+
+* LoanBuddy – Loan Approval Automation
+* Metal Factory Pipe Cutting
+* Custom Furniture Manufacturing
+
+### 🧭 What’s Next
+
+Algorithm runtime analysis and performance evaluation.
+
+---
+
+## 📅 Day 20 — Algorithm’s Runtime Analysis & Big-O Notation
+
+**Date:** 11/01/2026
+
+### 🧩 What I Learned
+
+* Time complexity concepts
+* Space complexity concepts
+* Big-O notation
+* Best, average, and worst-case analysis
+* Comparing algorithm efficiency
+
+### 🧪 Scenario-Based Problems
+
+* BookBuddy – Digital Bookshelf App
+* CinemaTime – Movie Schedule Manager
+
+### 🧭 What’s Next
+
+Revision and integration of all covered concepts.
+
+---
+
