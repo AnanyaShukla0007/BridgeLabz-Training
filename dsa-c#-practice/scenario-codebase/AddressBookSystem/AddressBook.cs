@@ -58,8 +58,32 @@ namespace AddressBookSystem
             }
         }
 
-        // UC-10: Sort contacts alphabetically by First Name (Bubble Sort)
+        // UC-10: Sort by First Name
         public void SortContactsByName()
+        {
+            BubbleSort((a, b) => string.Compare(a.FirstName, b.FirstName));
+        }
+
+        // UC-11: Sort by City
+        public void SortContactsByCity()
+        {
+            BubbleSort((a, b) => string.Compare(a.City, b.City));
+        }
+
+        // UC-11: Sort by State
+        public void SortContactsByState()
+        {
+            BubbleSort((a, b) => string.Compare(a.State, b.State));
+        }
+
+        // UC-11: Sort by Zip
+        public void SortContactsByZip()
+        {
+            BubbleSort((a, b) => string.Compare(a.Zip, b.Zip));
+        }
+
+        // Shared Bubble Sort logic (DSA)
+        private void BubbleSort(Func<ContactPerson, ContactPerson, int> compare)
         {
             if (head == null || head.Next == null)
                 return;
@@ -72,11 +96,8 @@ namespace AddressBookSystem
 
                 while (current.Next != null)
                 {
-                    if (string.Compare(
-                        current.Data.FirstName,
-                        current.Next.Data.FirstName) > 0)
+                    if (compare(current.Data, current.Next.Data) > 0)
                     {
-                        // swap data
                         ContactPerson temp = current.Data;
                         current.Data = current.Next.Data;
                         current.Next.Data = temp;
@@ -87,12 +108,12 @@ namespace AddressBookSystem
             } while (swapped);
         }
 
-        // UC-4 / UC-10: Display contacts
+        // UC-4 / UC-10 / UC-11
         public void DisplayContacts()
         {
             Console.WriteLine("\nAddress Book: " + AddressBookName);
-
             ContactNode temp = head;
+
             while (temp != null)
             {
                 Console.WriteLine(temp.Data.ToString());
