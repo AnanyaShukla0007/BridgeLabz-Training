@@ -9,20 +9,19 @@ namespace AddressBookSystem
     // AddressBook class manages contact operations
     class AddressBook
     {
-        // UC-1: Stores a single contact person
+        // UC-1: Stores a single contact
         private ContactPerson contact;
 
-        // UC-1: Add a new contact to Address Book
+        // UC-1: Add a new contact
         public void AddContact(ContactPerson person)
         {
             contact = person;
             Console.WriteLine("\nContact added successfully!");
         }
 
-        // UC-2: Edit existing contact using First Name
+        // UC-2: Edit contact using First Name
         public void EditContact(string firstName)
         {
-            // UC-2: Check if contact exists and name matches
             if (contact != null && contact.FirstName.Equals(firstName))
             {
                 Console.Write("Enter New Address: ");
@@ -51,11 +50,28 @@ namespace AddressBookSystem
             }
         }
 
+        // UC-3: Delete contact using First Name
+        public void DeleteContact(string firstName)
+        {
+            if (contact != null && contact.FirstName.Equals(firstName))
+            {
+                contact = null;
+                Console.WriteLine("\nContact deleted successfully!");
+            }
+            else
+            {
+                Console.WriteLine("\nContact not found!");
+            }
+        }
+
         // UC-1 & UC-2: Display contact details
         public void DisplayContact()
         {
             if (contact == null)
+            {
+                Console.WriteLine("\nNo contact to display.");
                 return;
+            }
 
             Console.WriteLine("\n--- Contact Details ---");
             Console.WriteLine("Name: " + contact.FirstName + " " + contact.LastName);

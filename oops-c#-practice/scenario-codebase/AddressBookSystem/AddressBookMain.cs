@@ -10,13 +10,13 @@ namespace AddressBookSystem
     {
         static void Main(string[] args)
         {
-            // UC-1: Display welcome message
+            // UC-1: Welcome message
             Console.WriteLine("Welcome to Address Book Program");
 
             AddressBook addressBook = new AddressBook();
             ContactPerson person = new ContactPerson();
 
-            // UC-1: Take contact details from user
+            // UC-1: Take input for new contact
             Console.Write("Enter First Name: ");
             person.FirstName = Console.ReadLine();
 
@@ -41,19 +41,20 @@ namespace AddressBookSystem
             Console.Write("Enter Email: ");
             person.Email = Console.ReadLine();
 
-            // UC-1: Add contact to Address Book
+            // UC-1: Add contact
             addressBook.AddContact(person);
-
-            // UC-1: Display added contact
             addressBook.DisplayContact();
 
-            // UC-2: Edit existing contact using first name
+            // UC-2: Edit contact
             Console.Write("\nEnter First Name to Edit Contact: ");
             string editName = Console.ReadLine();
-
             addressBook.EditContact(editName);
+            addressBook.DisplayContact();
 
-            // UC-2: Display updated contact
+            // UC-3: Delete contact
+            Console.Write("\nEnter First Name to Delete Contact: ");
+            string deleteName = Console.ReadLine();
+            addressBook.DeleteContact(deleteName);
             addressBook.DisplayContact();
         }
     }
