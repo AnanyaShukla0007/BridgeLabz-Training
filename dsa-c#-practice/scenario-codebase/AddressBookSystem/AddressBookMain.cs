@@ -38,15 +38,15 @@ namespace AddressBookSystem
             }
         }
 
-        // UC-8: Search person by City or State across all Address Books
+        // UC-8: Search person by City or State
         public void SearchPersonByCityOrState(string value)
         {
-            bool found = false;
             AddressBookNode bookNode = head;
+            bool found = false;
 
             while (bookNode != null)
             {
-                ContactNode contactNode = bookNode.Data.GetHead(); // access contact list
+                ContactNode contactNode = bookNode.Data.GetHead();
 
                 while (contactNode != null)
                 {
@@ -68,7 +68,34 @@ namespace AddressBookSystem
             }
 
             if (!found)
-                Console.WriteLine("No persons found for given City or State.");
+                Console.WriteLine("No persons found.");
+        }
+
+        // UC-9: Count persons by City or State
+        public void CountPersonByCityOrState(string value)
+        {
+            int count = 0;
+            AddressBookNode bookNode = head;
+
+            while (bookNode != null)
+            {
+                ContactNode contactNode = bookNode.Data.GetHead();
+
+                while (contactNode != null)
+                {
+                    if (contactNode.Data.City.Equals(value)
+                        || contactNode.Data.State.Equals(value))
+                    {
+                        count++;
+                    }
+                    contactNode = contactNode.Next;
+                }
+                bookNode = bookNode.Next;
+            }
+
+            Console.WriteLine(
+                "Number of persons in " + value + " = " + count
+            );
         }
     }
 
@@ -82,10 +109,11 @@ namespace AddressBookSystem
 
             // (Assume AddressBooks + Contacts already added from UC-5 flow)
 
-            Console.Write("\nEnter City or State to search: ");
-            string searchValue = Console.ReadLine();
+            Console.Write("\nEnter City or State to count persons: ");
+            string value = Console.ReadLine();
 
-            system.SearchPersonByCityOrState(searchValue);
+            // UC-9: Count result
+            system.CountPersonByCityOrState(value);
         }
     }
 }
