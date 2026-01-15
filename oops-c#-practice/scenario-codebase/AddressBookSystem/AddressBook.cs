@@ -6,18 +6,57 @@ using System.Threading.Tasks;
 
 namespace AddressBookSystem
 {
+    // AddressBook class manages contact operations
     class AddressBook
     {
+        // UC-1: Stores a single contact person
         private ContactPerson contact;
 
+        // UC-1: Add a new contact to Address Book
         public void AddContact(ContactPerson person)
         {
             contact = person;
             Console.WriteLine("\nContact added successfully!");
         }
 
+        // UC-2: Edit existing contact using First Name
+        public void EditContact(string firstName)
+        {
+            // UC-2: Check if contact exists and name matches
+            if (contact != null && contact.FirstName.Equals(firstName))
+            {
+                Console.Write("Enter New Address: ");
+                contact.Address = Console.ReadLine();
+
+                Console.Write("Enter New City: ");
+                contact.City = Console.ReadLine();
+
+                Console.Write("Enter New State: ");
+                contact.State = Console.ReadLine();
+
+                Console.Write("Enter New Zip: ");
+                contact.Zip = Console.ReadLine();
+
+                Console.Write("Enter New Phone Number: ");
+                contact.PhoneNumber = Console.ReadLine();
+
+                Console.Write("Enter New Email: ");
+                contact.Email = Console.ReadLine();
+
+                Console.WriteLine("\nContact updated successfully!");
+            }
+            else
+            {
+                Console.WriteLine("\nContact not found!");
+            }
+        }
+
+        // UC-1 & UC-2: Display contact details
         public void DisplayContact()
         {
+            if (contact == null)
+                return;
+
             Console.WriteLine("\n--- Contact Details ---");
             Console.WriteLine("Name: " + contact.FirstName + " " + contact.LastName);
             Console.WriteLine("Address: " + contact.Address);
