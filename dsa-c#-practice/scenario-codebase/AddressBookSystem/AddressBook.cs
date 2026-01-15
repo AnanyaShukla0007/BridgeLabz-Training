@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AddressBookSystem
 {
-    // UC-4: Node for Contact Linked List
+    // UC-4: Node class for Contact Linked List
     class ContactNode
     {
         public ContactPerson Data;
@@ -19,14 +19,16 @@ namespace AddressBookSystem
         }
     }
 
-    // UC-5, UC-6, UC-7: AddressBook
+    // UC-5, UC-6, UC-7, UC-8: AddressBook class
     class AddressBook
     {
+        // UC-5: Unique name for Address Book
         public string AddressBookName { get; set; }
 
+        // UC-4: Head of Contact Linked List
         private ContactNode head = null;
 
-        // UC-7: Duplicate check using Equals()
+        // UC-7: Check duplicate contact using Equals()
         private bool IsDuplicate(ContactPerson person)
         {
             ContactNode temp = head;
@@ -42,7 +44,7 @@ namespace AddressBookSystem
             return false;
         }
 
-        // UC-4 & UC-7: Add contact with object-based duplicate check
+        // UC-4 & UC-6 & UC-7: Add contact with duplicate prevention
         public void AddContact(ContactPerson person)
         {
             if (IsDuplicate(person))
@@ -61,15 +63,16 @@ namespace AddressBookSystem
             {
                 ContactNode temp = head;
                 while (temp.Next != null)
+                {
                     temp = temp.Next;
-
+                }
                 temp.Next = newNode;
             }
 
             Console.WriteLine("Contact added successfully.");
         }
 
-        // UC-4: Display contacts
+        // UC-4: Display all contacts in this Address Book
         public void DisplayContacts()
         {
             Console.WriteLine("\nAddress Book: " + AddressBookName);
@@ -87,10 +90,17 @@ namespace AddressBookSystem
                     temp.Data.FirstName + " " +
                     temp.Data.LastName + " | " +
                     temp.Data.City + " | " +
+                    temp.Data.State + " | " +
                     temp.Data.PhoneNumber
                 );
                 temp = temp.Next;
             }
+        }
+
+        // UC-8 helper: expose head for traversal across Address Books
+        public ContactNode GetHead()
+        {
+            return head;
         }
     }
 }
