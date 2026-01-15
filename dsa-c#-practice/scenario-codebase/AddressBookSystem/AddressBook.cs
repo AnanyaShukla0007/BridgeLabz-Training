@@ -6,81 +6,130 @@ using System.Threading.Tasks;
 
 namespace AddressBookSystem
 {
-    // AddressBook class manages contact operations
+    // UC-4: Node class for Linked List
+    class ContactNode
+    {
+        public ContactPerson Data;
+        public ContactNode Next;
+
+        public ContactNode(ContactPerson person)
+        {
+            Data = person;
+            Next = null;
+        }
+    }
+
+    // AddressBook handles all contact operations
     class AddressBook
     {
-        // UC-1: Stores a single contact
-        private ContactPerson contact;
+        // UC-4: Head node of Linked List
+        private ContactNode head = null;
 
-        // UC-1: Add a new contact
+        // UC-1 & UC-4: Add contact to Address Book
         public void AddContact(ContactPerson person)
         {
-            contact = person;
-            Console.WriteLine("\nContact added successfully!");
+            ContactNode newNode = new ContactNode(person);
+
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                ContactNode temp = head;
+                while (temp.Next != null)
+                {
+                    temp = temp.Next;
+                }
+                temp.Next = newNode;
+            }
+
+            Console.WriteLine("Contact added successfully!");
         }
 
         // UC-2: Edit contact using First Name
         public void EditContact(string firstName)
         {
-            if (contact != null && contact.FirstName.Equals(firstName))
+            ContactNode temp = head;
+
+            while (temp != null)
             {
-                Console.Write("Enter New Address: ");
-                contact.Address = Console.ReadLine();
+                if (temp.Data.FirstName.Equals(firstName))
+                {
+                    Console.Write("Enter New City: ");
+                    temp.Data.City = Console.ReadLine();
 
-                Console.Write("Enter New City: ");
-                contact.City = Console.ReadLine();
+                    Console.Write("Enter New State: ");
+                    temp.Data.State = Console.ReadLine();
 
-                Console.Write("Enter New State: ");
-                contact.State = Console.ReadLine();
+                    Console.Write("Enter New Phone Number: ");
+                    temp.Data.PhoneNumber = Console.ReadLine();
 
-                Console.Write("Enter New Zip: ");
-                contact.Zip = Console.ReadLine();
-
-                Console.Write("Enter New Phone Number: ");
-                contact.PhoneNumber = Console.ReadLine();
-
-                Console.Write("Enter New Email: ");
-                contact.Email = Console.ReadLine();
-
-                Console.WriteLine("\nContact updated successfully!");
+                    Console.WriteLine("Contact updated successfully!");
+                    return;
+                }
+                temp = temp.Next;
             }
-            else
-            {
-                Console.WriteLine("\nContact not found!");
-            }
+
+            Console.WriteLine("Contact not found!");
         }
 
         // UC-3: Delete contact using First Name
         public void DeleteContact(string firstName)
         {
-            if (contact != null && contact.FirstName.Equals(firstName))
+            if (head == null)
             {
-                contact = null;
-                Console.WriteLine("\nContact deleted successfully!");
-            }
-            else
-            {
-                Console.WriteLine("\nContact not found!");
-            }
-        }
-
-        // UC-1 & UC-2: Display contact details
-        public void DisplayContact()
-        {
-            if (contact == null)
-            {
-                Console.WriteLine("\nNo contact to display.");
+                Console.WriteLine("No contacts available.");
                 return;
             }
 
-            Console.WriteLine("\n--- Contact Details ---");
-            Console.WriteLine("Name: " + contact.FirstName + " " + contact.LastName);
-            Console.WriteLine("Address: " + contact.Address);
-            Console.WriteLine("City: " + contact.City);
-            Console.WriteLine("State: " + contact.State);
-            Console.WriteLine("Zip: " + contact.Zip);
-            Console.WriteLine("Phone: " + contact.PhoneNumber);
-            Console.WriteLine("Email: " + contact.Email);
+            if (head.Data.FirstName.Equals(firstName))
+            {
+                head = head.Next;
+                Console.WriteLine("Contact deleted successfully!");
+                return;
+            }
+
+            ContactNode prev = head;
+            ContactNode curr = head.Next;
+
+            while (curr != null)
+            {
+                if (curr.Data.FirstName.Equals(firstName))
+                {
+                    prev.Next = curr.Next;
+                    Console.WriteLine("Contact deleted successfully!");
+                    return;
+                }
+                prev = curr;
+                curr = curr.Next;
+            }
+
+            Console.WriteLine("Contact not found!");
+        }
+
+        // UC-4: Display all contacts
+        public void DisplayAllContacts()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("No contacts to display.");
+                return;
+            }
+
+            Console.WriteLine("\n--- Address Book Contacts ---");
+            ContactNode temp = head;
+
+            while (temp != null)
+            {
+                Console.WriteLine(
+                    temp.Data.FirstName + " " +
+                    temp.Data.LastName + " | " +
+                    temp.Data.City + " | " +
+                    temp.Data.PhoneNumber
+                );
+                temp = temp.Next;
+            }
         }
     }
 }
