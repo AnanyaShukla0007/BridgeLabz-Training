@@ -19,16 +19,38 @@ namespace AddressBookSystem
         }
     }
 
-    // UC-5: AddressBook with unique name
+    // UC-5, UC-6, UC-7: AddressBook
     class AddressBook
     {
-        public string AddressBookName { get; set; }   // UC-5
+        public string AddressBookName { get; set; }
 
         private ContactNode head = null;
 
-        // UC-4: Add contact
+        // UC-7: Duplicate check using Equals()
+        private bool IsDuplicate(ContactPerson person)
+        {
+            ContactNode temp = head;
+
+            while (temp != null)
+            {
+                if (temp.Data.Equals(person))
+                {
+                    return true;
+                }
+                temp = temp.Next;
+            }
+            return false;
+        }
+
+        // UC-4 & UC-7: Add contact with object-based duplicate check
         public void AddContact(ContactPerson person)
         {
+            if (IsDuplicate(person))
+            {
+                Console.WriteLine("Duplicate contact found. Entry not allowed.");
+                return;
+            }
+
             ContactNode newNode = new ContactNode(person);
 
             if (head == null)
@@ -43,6 +65,8 @@ namespace AddressBookSystem
 
                 temp.Next = newNode;
             }
+
+            Console.WriteLine("Contact added successfully.");
         }
 
         // UC-4: Display contacts
