@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace AddressBookSystem
 {
-    // UC-1 & UC-7: Represents a single contact person
     class ContactPerson
     {
         public string FirstName { get; set; }
@@ -18,22 +17,29 @@ namespace AddressBookSystem
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
 
-        // UC-7: Override Equals to check duplicate person
+        // UC-7: Equals override
         public override bool Equals(object obj)
         {
             if (obj == null || !(obj is ContactPerson))
                 return false;
 
             ContactPerson other = (ContactPerson)obj;
-
-            return this.FirstName.Equals(other.FirstName)
-                && this.LastName.Equals(other.LastName);
+            return FirstName.Equals(other.FirstName)
+                && LastName.Equals(other.LastName);
         }
 
-        // UC-7: Override GetHashCode (rule: Equals + GetHashCode together)
         public override int GetHashCode()
         {
             return (FirstName + LastName).GetHashCode();
+        }
+
+        // UC-10: Override ToString for printing
+        public override string ToString()
+        {
+            return FirstName + " " + LastName + " | "
+                 + City + " | "
+                 + State + " | "
+                 + PhoneNumber;
         }
     }
 }
