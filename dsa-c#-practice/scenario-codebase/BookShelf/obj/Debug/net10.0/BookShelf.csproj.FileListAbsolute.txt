@@ -1,0 +1,15 @@
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\obj\Debug\net10.0\BookShelf.GeneratedMSBuildEditorConfig.editorconfig
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\obj\Debug\net10.0\BookShelf.AssemblyInfoInputs.cache
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\obj\Debug\net10.0\BookShelf.AssemblyInfo.cs
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\obj\Debug\net10.0\BookShelf.csproj.CoreCompileInputs.cache
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\obj\Debug\net10.0\BookShelf.sourcelink.json
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\bin\Debug\net10.0\BookShelf.exe
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\bin\Debug\net10.0\BookShelf.deps.json
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\bin\Debug\net10.0\BookShelf.runtimeconfig.json
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\bin\Debug\net10.0\BookShelf.dll
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\bin\Debug\net10.0\BookShelf.pdb
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\obj\Debug\net10.0\BookShelf.dll
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\obj\Debug\net10.0\refint\BookShelf.dll
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\obj\Debug\net10.0\BookShelf.pdb
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\obj\Debug\net10.0\BookShelf.genruntimeconfig.cache
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\BookShelf\obj\Debug\net10.0\ref\BookShelf.dll
