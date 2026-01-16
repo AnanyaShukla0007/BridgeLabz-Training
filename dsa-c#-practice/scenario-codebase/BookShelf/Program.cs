@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace BridgeLabzTraning.BookBuddy
+namespace BridgeLabzTraning.BookShelf
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            new BookMenu().Start();
+            new LibraryMenu().Start();
         }
     }
 }
