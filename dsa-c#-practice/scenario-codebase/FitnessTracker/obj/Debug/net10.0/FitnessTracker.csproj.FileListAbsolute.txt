@@ -1,0 +1,15 @@
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\bin\Debug\net10.0\FitnessTracker.exe
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\bin\Debug\net10.0\FitnessTracker.deps.json
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\bin\Debug\net10.0\FitnessTracker.runtimeconfig.json
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\bin\Debug\net10.0\FitnessTracker.dll
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\bin\Debug\net10.0\FitnessTracker.pdb
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\obj\Debug\net10.0\FitnessTracker.GeneratedMSBuildEditorConfig.editorconfig
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\obj\Debug\net10.0\FitnessTracker.AssemblyInfoInputs.cache
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\obj\Debug\net10.0\FitnessTracker.AssemblyInfo.cs
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\obj\Debug\net10.0\FitnessTracker.csproj.CoreCompileInputs.cache
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\obj\Debug\net10.0\FitnessTracker.sourcelink.json
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\obj\Debug\net10.0\FitnessTracker.dll
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\obj\Debug\net10.0\refint\FitnessTracker.dll
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\obj\Debug\net10.0\FitnessTracker.pdb
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\obj\Debug\net10.0\FitnessTracker.genruntimeconfig.cache
+D:\bl\BridgeLabz-Training\dsa-c#-practice\scenario-codebase\FitnessTracker\obj\Debug\net10.0\ref\FitnessTracker.dll
