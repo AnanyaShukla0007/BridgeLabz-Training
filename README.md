@@ -408,3 +408,195 @@ Revision and integration of all covered concepts.
 
 ---
 
+## 📅 Day 21 — Address Book Problem
+
+**Date:** 14/01/2026
+
+### 🧩 What I Learned
+
+* Applying OOP concepts to real-world problems
+* Working with classes, objects, and collections
+* Structuring data for CRUD operations
+
+### 🧪 Scenario-Based Problems
+
+* Address Book Problem
+
+### 🧭 What’s Next
+
+Linked Lists and stack-based problem solving.
+
+---
+
+## 📅 Day 22 — Doubly Linked List & Stack Applications
+
+**Date:** 15/01/2026
+
+### 🧩 What I Learned
+
+* Doubly Linked List traversal and manipulation
+* Stack-based undo/restore operations
+* Memory-efficient navigation logic
+
+### 🧪 Scenario-Based Problems
+
+* BrowserBuddy – Tab History Manager
+
+### 🧭 What’s Next
+
+Circular Linked Lists and queue-based systems.
+
+---
+
+## 📅 Day 23 — Circular Linked List, Queue & Hash-Based Design
+
+**Date:** 16/01/2026
+
+### 🧩 What I Learned
+
+* Circular Linked List operations
+* Queue handling with overflow and underflow
+* HashMap usage for structured data storage
+* Avoiding duplication using HashSet
+
+### 🧪 Scenario-Based Problems
+
+* TrafficManager – Roundabout Vehicle Flow
+* BookShelf – Library Organization System
+
+### 🧭 What’s Next
+
+Advanced sorting techniques and performance optimization.
+
+---
+
+## 📅 Day 24 — Sorting Algorithms & Performance Optimization
+
+**Date:** 17/01/2026
+
+### 🧩 What I Learned
+
+* Quick Sort for large datasets
+* Bubble Sort for small, frequently updated lists
+* Choosing sorting algorithms based on use case
+
+### 🧪 Scenario-Based Problems
+
+* FlashDealz – Product Sorting by Discount
+* FitnessTracker – Daily Step Count Ranking
+
+### 🧭 What’s Next
+
+Generics and reusable data structures.
+
+---
+
+## 📅 Day 25 — C# Generics, Singly Linked List & Stack + HashMap
+
+**Date:** 19/01/2026
+
+### 🧩 What I Learned
+
+* Generic classes and methods in C#
+* Type safety and reusability using generics
+* Singly Linked List traversal
+* Stack-based navigation logic
+* HashMap for key–value data storage
+* Function-based evaluation using methods
+
+### 🧪 Scenario-Based Problems
+
+* ParcelTracker – Delivery Chain Management
+* ExamProctor – Online Exam Review System
+
+### 🧭 What’s Next
+
+Collections framework and advanced sorting techniques.
+
+---
+
+## 📅 Day 26 — Collections, Radix Sort & Backtracking
+
+**Date:** 20/01/2026
+
+### 🧩 What I Learned
+
+* Working with C# Collections
+* Radix Sort for large numeric datasets
+* Searching data after sorting
+* Backtracking approach for exhaustive search
+* Recursive solution design
+
+### 🧪 Scenario-Based Problems
+
+* Sorting Aadhaar Numbers using Radix Sort
+* Password Cracker Simulator
+
+### 🧭 What’s Next
+
+C# Streams and file-based data processing.
+
+---
+
+## 📅 Day 27 — C# Streams
+
+**Date:** 21/01/2026
+
+### 🧩 What I Learned
+
+* File input/output using streams
+* Reading and writing data efficiently
+* Stream-based data processing
+
+### 🧪 Scenario-Based Problems
+
+* Stream handling exercises
+
+### 🧭 What’s Next
+
+Exception handling and defensive programming.
+
+---
+
+## 📅 Day 28 — Exceptions & Circular Linked List Applications
+
+**Date:** 22/01/2026
+
+### 🧩 What I Learned
+
+* Exception handling using try-catch
+* Custom exception creation
+* Circular Linked List traversal and modification
+
+### 🧪 Scenario-Based Problems
+
+* AmbulanceRoute – Emergency Patient Navigation
+
+### 🧭 What’s Next
+
+Annotations, reflection, and testing.
+
+---
+
+## 📅 Day 29 — Regex, NUnit, Annotations & Reflection
+
+**Date:** 23/01/2026
+
+### 🧩 What I Learned
+
+* Regular Expressions for pattern matching
+* Unit testing using NUnit
+* Annotations for metadata handling
+* Reflection for runtime inspection
+
+### 🧪 Scenario-Based Problems
+
+* Regex-based validations
+* Unit testing exercises
+
+### 🧭 What’s Next
+
+Comprehensive revision and system integration.
+
+---
+
