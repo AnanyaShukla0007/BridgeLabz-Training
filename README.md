@@ -1,7 +1,7 @@
 # BridgeLabz-Training 🚀
 
-Welcome to my BridgeLabz-Training repo!  
-This README serves as a central log of my daily progress across different topics, branches, and .Net and C# modules.  
+Welcome to my BridgeLabz-Training repo!
+This README serves as a central log of my daily progress across different topics, branches, and .NET and C# modules.
 Each entry includes concepts covered and skills practiced.
 
 ---
@@ -39,6 +39,8 @@ Introduction to .NET ecosystem and C# basics.
 C# data types and operators.
 
 ---
+
+## 📘 Week 01 — Core Programming
 
 ## 📅 Day 3 — C# Programming Fundamentals
 
@@ -147,6 +149,8 @@ Scenario-based problem solving.
 
 ---
 
+## 📘 Week 02 — Object-Oriented Programming
+
 ## 📅 Day 9 — OOP Fundamentals & Scenario-Based Logic
 
 **Date:** 29/12/2025
@@ -168,7 +172,7 @@ Mini console applications and constructors.
 
 ---
 
-## 📅 Day 10 — C# Constructors, Instance vs. Class Variables, Access Modifiers Concepts
+## 📅 Day 10 — Constructors, Instance vs Class Variables, Access Modifiers
 
 **Date:** 30/12/2025
 
@@ -191,17 +195,17 @@ Keywords and type checking.
 
 ---
 
-## 📅 Day 11 — this, sealed, static key words and is operator Content
+## 📅 Day 11 — this, sealed, static Keywords & is Operator
 
 **Date:** 31/12/2025
 
 ### 🧩 What I Learned
 
-* Usage of this keyword to refer to the current object and resolve naming conflicts
-* Understanding static keyword for class-level variables and methods
-* Purpose and use cases of the sealed keyword in classes and methods
-* Type checking and safe casting using the is operator
-* Differences between instance members and static members
+* this keyword usage
+* static keyword behavior
+* sealed keyword purpose
+* Type checking using is
+* Instance vs static members
 
 ### 🧪 Scenario-Based Problems
 
@@ -215,17 +219,16 @@ Object modeling and design principles.
 
 ---
 
-## 📅 Day 12 — Object Modeling, Class Diagram
+## 📅 Day 12 — Object Modeling & Class Diagram
 
 **Date:** 01/01/2026
 
 ### 🧩 What I Learned
 
-* Concept of object modeling using real-world entities
-* Designing class diagrams with attributes and method
-* Identifying relationships between classes
-* Mapping problem requirements to class structures
-* Understanding how design improves code clarity and maintainability
+* Object modeling concepts
+* Class diagram design
+* Identifying relationships
+* Mapping requirements to classes
 
 ### 🧪 Scenario-Based Problems
 
@@ -284,7 +287,7 @@ Interface-based design with real-world cases.
 ### 🧩 What I Learned
 
 * Interface implementation
-* Polymorphism using `is`
+* Polymorphism using is
 * Array-based object handling
 
 ### 🧪 Scenario-Based Problems
@@ -299,7 +302,9 @@ Data Structures – Linked Lists.
 
 ---
 
-## 📅 Day 16 — Data Structures: Linked Lists
+## 📘 Week 03 — Data Structures
+
+## 📅 Day 16 — Linked Lists
 
 **Date:** 07/01/2026
 
@@ -336,7 +341,7 @@ Stack, Queue, and Hashing.
 
 ### 🧭 What’s Next
 
-Sorting Algorithm.
+Sorting Algorithms.
 
 ---
 
@@ -346,9 +351,9 @@ Sorting Algorithm.
 
 ### 🧩 What I Learned
 
-* Sorting algorithms and their use cases
-* Comparison-based sorting techniques
-* Step-by-step working of sorting logic
+* Sorting algorithms
+* Comparison-based sorting
+* Sorting logic flow
 
 ### 🧪 Scenario-Based Problems
 
@@ -357,7 +362,7 @@ Sorting Algorithm.
 
 ### 🧭 What’s Next
 
-Searching algorithms and file handling concepts.
+Searching algorithms and I/O utilities.
 
 ---
 
@@ -369,9 +374,8 @@ Searching algorithms and file handling concepts.
 
 * Linear Search
 * Binary Search
-* Difference between linear and binary search
-* StringBuilder and StringBuffer
-* Reading input using BufferedReader, FileReader, InputStreamReader
+* StringBuilder & StringBuffer
+* BufferedReader, FileReader, InputStreamReader
 
 ### 🧪 Scenario-Based Problems
 
@@ -381,21 +385,20 @@ Searching algorithms and file handling concepts.
 
 ### 🧭 What’s Next
 
-Algorithm runtime analysis and performance evaluation.
+Algorithm runtime analysis.
 
 ---
 
-## 📅 Day 20 — Algorithm’s Runtime Analysis & Big-O Notation
+## 📅 Day 20 — Algorithm Runtime Analysis & Big-O
 
 **Date:** 11/01/2026
 
 ### 🧩 What I Learned
 
-* Time complexity concepts
-* Space complexity concepts
+* Time complexity
+* Space complexity
 * Big-O notation
-* Best, average, and worst-case analysis
-* Comparing algorithm efficiency
+* Best, average, worst cases
 
 ### 🧪 Scenario-Based Problems
 
@@ -404,7 +407,7 @@ Algorithm runtime analysis and performance evaluation.
 
 ### 🧭 What’s Next
 
-Revision and integration of all covered concepts.
+Advanced data structures and collections.
 
 ---
 
@@ -414,9 +417,9 @@ Revision and integration of all covered concepts.
 
 ### 🧩 What I Learned
 
-* Applying OOP concepts to real-world problems
-* Working with classes, objects, and collections
-* Structuring data for CRUD operations
+* OOP-based CRUD design
+* Collections usage
+* Data organization
 
 ### 🧪 Scenario-Based Problems
 
@@ -424,7 +427,7 @@ Revision and integration of all covered concepts.
 
 ### 🧭 What’s Next
 
-Linked Lists and stack-based problem solving.
+Doubly Linked Lists and stack applications.
 
 ---
 
@@ -434,9 +437,8 @@ Linked Lists and stack-based problem solving.
 
 ### 🧩 What I Learned
 
-* Doubly Linked List traversal and manipulation
-* Stack-based undo/restore operations
-* Memory-efficient navigation logic
+* Doubly Linked List traversal
+* Stack undo/restore logic
 
 ### 🧪 Scenario-Based Problems
 
@@ -444,7 +446,7 @@ Linked Lists and stack-based problem solving.
 
 ### 🧭 What’s Next
 
-Circular Linked Lists and queue-based systems.
+Circular Linked Lists and queues.
 
 ---
 
@@ -454,10 +456,9 @@ Circular Linked Lists and queue-based systems.
 
 ### 🧩 What I Learned
 
-* Circular Linked List operations
-* Queue handling with overflow and underflow
-* HashMap usage for structured data storage
-* Avoiding duplication using HashSet
+* Circular Linked List
+* Queue overflow/underflow
+* HashMap & HashSet
 
 ### 🧪 Scenario-Based Problems
 
@@ -466,19 +467,19 @@ Circular Linked Lists and queue-based systems.
 
 ### 🧭 What’s Next
 
-Advanced sorting techniques and performance optimization.
+Advanced sorting techniques.
 
 ---
 
-## 📅 Day 24 — Sorting Algorithms & Performance Optimization
+## 📅 Day 24 — Sorting Algorithms & Optimization
 
 **Date:** 17/01/2026
 
 ### 🧩 What I Learned
 
-* Quick Sort for large datasets
-* Bubble Sort for small, frequently updated lists
-* Choosing sorting algorithms based on use case
+* Quick Sort
+* Bubble Sort
+* Algorithm selection
 
 ### 🧪 Scenario-Based Problems
 
@@ -487,22 +488,21 @@ Advanced sorting techniques and performance optimization.
 
 ### 🧭 What’s Next
 
-Generics and reusable data structures.
+Generics and reusable structures.
 
 ---
 
-## 📅 Day 25 — C# Generics, Singly Linked List & Stack + HashMap
+## 📘 Week 04 — Collections & Streams
+
+## 📅 Day 25 — C# Generics, Singly Linked List & Stack/Map
 
 **Date:** 19/01/2026
 
 ### 🧩 What I Learned
 
-* Generic classes and methods in C#
-* Type safety and reusability using generics
-* Singly Linked List traversal
-* Stack-based navigation logic
-* HashMap for key–value data storage
-* Function-based evaluation using methods
+* C# Generics
+* Singly Linked List
+* Stack & HashMap usage
 
 ### 🧪 Scenario-Based Problems
 
@@ -511,7 +511,7 @@ Generics and reusable data structures.
 
 ### 🧭 What’s Next
 
-Collections framework and advanced sorting techniques.
+Collections and radix sort.
 
 ---
 
@@ -521,20 +521,18 @@ Collections framework and advanced sorting techniques.
 
 ### 🧩 What I Learned
 
-* Working with C# Collections
-* Radix Sort for large numeric datasets
-* Searching data after sorting
-* Backtracking approach for exhaustive search
-* Recursive solution design
+* C# Collections
+* Radix Sort
+* Backtracking
 
 ### 🧪 Scenario-Based Problems
 
-* Sorting Aadhaar Numbers using Radix Sort
+* Sorting Aadhaar Numbers
 * Password Cracker Simulator
 
 ### 🧭 What’s Next
 
-C# Streams and file-based data processing.
+Streams and file processing.
 
 ---
 
@@ -544,29 +542,27 @@ C# Streams and file-based data processing.
 
 ### 🧩 What I Learned
 
-* File input/output using streams
-* Reading and writing data efficiently
-* Stream-based data processing
+* File streams
+* Data processing
 
 ### 🧪 Scenario-Based Problems
 
-* Stream handling exercises
+* Stream exercises
 
 ### 🧭 What’s Next
 
-Exception handling and defensive programming.
+Exceptions and defensive coding.
 
 ---
 
-## 📅 Day 28 — Exceptions & Circular Linked List Applications
+## 📅 Day 28 — Exceptions & Circular Linked Lists
 
 **Date:** 22/01/2026
 
 ### 🧩 What I Learned
 
-* Exception handling using try-catch
-* Custom exception creation
-* Circular Linked List traversal and modification
+* Exception handling
+* Circular Linked Lists
 
 ### 🧪 Scenario-Based Problems
 
@@ -574,7 +570,7 @@ Exception handling and defensive programming.
 
 ### 🧭 What’s Next
 
-Annotations, reflection, and testing.
+Annotations and reflection.
 
 ---
 
@@ -584,19 +580,118 @@ Annotations, reflection, and testing.
 
 ### 🧩 What I Learned
 
-* Regular Expressions for pattern matching
-* Unit testing using NUnit
-* Annotations for metadata handling
-* Reflection for runtime inspection
+* Regex
+* NUnit testing
+* Annotations
+* Reflection
 
 ### 🧪 Scenario-Based Problems
 
-* Regex-based validations
-* Unit testing exercises
+* Regex validations
+* Unit testing
 
 ### 🧭 What’s Next
 
-Comprehensive revision and system integration.
+Annotation-driven systems.
 
 ---
 
+## 📅 Day 30 — Annotations & Reflection
+
+**Date:** 24/01/2026
+
+### 🧩 What I Learned
+
+* Custom annotations
+* Reflection-based scanning
+
+### 🧪 Scenario-Based Problems
+
+* Annotation-based scenarios
+
+### 🧭 What’s Next
+
+Advanced annotation use cases.
+
+---
+
+## 📅 Day 31 — Annotation-Driven Systems
+
+**Date:** 27/01/2026
+
+### 🧩 What I Learned
+
+* Metadata-driven systems
+* JSON generation using reflection
+
+### 🧪 Scenario-Based Problems
+
+* HealthCheckPro – API Metadata Validator
+* EventTracker – Auto Audit System
+
+### 🧭 What’s Next
+
+IO programming.
+
+---
+
+## 📘 Week 05 — IO Programming
+
+## 📅 Day 32 — CSV Data Handling
+
+**Date:** 28/01/2026
+
+### 🧩 What I Learned
+
+* CSV parsing
+* File validations
+
+### 🧪 Scenario-Based Problems
+
+* Aero Vigil
+* Bank Account Validations
+
+### 🧭 What’s Next
+
+JSON data handling.
+
+---
+
+## 📅 Day 33 — JSON Data Handling & Streams
+
+**Date:** 29/01/2026
+
+### 🧩 What I Learned
+
+* JSON parsing
+* Stream processing
+
+### 🧪 Scenario-Based Problems
+
+* Stream Buzz
+* Ocean Fleet
+
+### 🧭 What’s Next
+
+Complex file-based systems.
+
+---
+
+## 📅 Day 34 — Advanced File-Based Case Studies
+
+**Date:** 30/01/2026
+
+### 🧩 What I Learned
+
+* End-to-end IO workflows
+
+### 🧪 Scenario-Based Problems
+
+* Lexical Twist
+* Future Logistics
+
+### 🧭 What’s Next
+
+Project-level integration.
+
+---
