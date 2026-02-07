@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using AddressBookSystem.Services;
 using AddressBookSystem.UCs;
 
@@ -12,7 +12,7 @@ namespace AddressBookSystem
             AddressBook book = new AddressBook();
             bool exit = false;
 
-            // MENU DRIVEN PROGRAM (OOPS: abstraction of operations)
+            // MENU DRIVEN PROGRAM
             while (!exit)
             {
                 Console.WriteLine("\n===== ADDRESS BOOK MENU =====");
@@ -24,33 +24,19 @@ namespace AddressBookSystem
                 Console.WriteLine("6. Exit");
                 Console.Write("Enter choice: ");
 
-                string choice = Console.ReadLine();
+                string choice = Console.ReadLine() ?? "";
 
                 try
                 {
                     switch (choice)
                     {
-                        case "1":
-                            UC1_AddContact.Execute(book);
-                            break;
-                        case "2":
-                            UC2_EditContact.Execute(book);
-                            break;
-                        case "3":
-                            UC3_DeleteContact.Execute(book);
-                            break;
-                        case "4":
-                            UC10_11_SortMenu.Execute(book);
-                            break;
-                        case "5":
-                            UC12_13_14_SaveMenu.Execute(book);
-                            break;
-                        case "6":
-                            exit = true;
-                            break;
-                        default:
-                            Console.WriteLine("Invalid choice.");
-                            break;
+                        case "1": UC1_AddContact.Execute(book); break;
+                        case "2": UC2_EditContact.Execute(book); break;
+                        case "3": UC3_DeleteContact.Execute(book); break;
+                        case "4": UC10_11_SortMenu.Execute(book); break;
+                        case "5": UC12_13_14_SaveMenu.Execute(book); break;
+                        case "6": exit = true; break;
+                        default: Console.WriteLine("Invalid choice."); break;
                     }
                 }
                 catch (Exception ex)

@@ -13,7 +13,7 @@ namespace AddressBookSystem.UCs
             Console.WriteLine("2. Save as CSV");
             Console.WriteLine("3. Save as JSON");
 
-            string ch = Console.ReadLine();
+            string ch = Console.ReadLine() ?? "";
 
             switch (ch)
             {
@@ -25,6 +25,9 @@ namespace AddressBookSystem.UCs
                     break;
                 case "3":
                     JsonService.WriteJson("Data/contacts.json", book.GetAllContacts());
+                    break;
+                default:
+                    Console.WriteLine("Invalid choice");
                     break;
             }
 

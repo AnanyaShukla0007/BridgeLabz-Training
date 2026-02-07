@@ -3,6 +3,7 @@ using AddressBookSystem.Services;
 
 namespace AddressBookSystem.UCs
 {
+    // UC-11: Sort contacts by City, State, or Zip
     public class UC11_SortByCityStateZip
     {
         public static void Execute(AddressBook book)
@@ -11,7 +12,8 @@ namespace AddressBookSystem.UCs
             Console.WriteLine("2. Sort by State");
             Console.WriteLine("3. Sort by Zip");
 
-            string choice = Console.ReadLine();
+            // FIX: Handle nullable input safely
+            string choice = Console.ReadLine() ?? "";
 
             switch (choice)
             {
@@ -19,13 +21,19 @@ namespace AddressBookSystem.UCs
                     book.SortByCity();
                     Console.WriteLine("Sorted by City");
                     break;
+
                 case "2":
                     book.SortByState();
                     Console.WriteLine("Sorted by State");
                     break;
+
                 case "3":
                     book.SortByZip();
                     Console.WriteLine("Sorted by Zip");
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid choice");
                     break;
             }
         }

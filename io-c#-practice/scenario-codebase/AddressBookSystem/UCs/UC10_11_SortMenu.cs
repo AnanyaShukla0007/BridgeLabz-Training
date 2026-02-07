@@ -13,7 +13,7 @@ namespace AddressBookSystem.UCs
             Console.WriteLine("3. Sort by State");
             Console.WriteLine("4. Sort by Zip");
 
-            string ch = Console.ReadLine();
+            string ch = Console.ReadLine() ?? "";
 
             switch (ch)
             {
@@ -21,6 +21,7 @@ namespace AddressBookSystem.UCs
                 case "2": book.SortByCity(); break;
                 case "3": book.SortByState(); break;
                 case "4": book.SortByZip(); break;
+                default: Console.WriteLine("Invalid choice"); break;
             }
 
             Console.WriteLine("Sorted Successfully.");

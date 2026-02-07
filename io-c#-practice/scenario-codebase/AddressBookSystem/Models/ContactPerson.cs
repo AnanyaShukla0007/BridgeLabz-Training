@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace AddressBookSystem.Models
 {
@@ -6,34 +7,43 @@ namespace AddressBookSystem.Models
     // UC-1: Represents a Contact Person
     public class ContactPerson
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Address { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
-        public string Zip { get; set; }
-        public string PhoneNumber { get; set; }
-        public string Email { get; set; }
+        [Required]
+        public string FirstName { get; set; } = "";
 
-        // UC-7: Override Equals for duplicate check
-        public override bool Equals(object obj)
+        [Required]
+        public string LastName { get; set; } = "";
+
+        public string Address { get; set; } = "";
+
+        [Required]
+        public string City { get; set; } = "";
+
+        [Required]
+        public string State { get; set; } = "";
+
+        [Required]
+        public string Zip { get; set; } = "";
+
+        // Regex: Indian phone number
+        [Required]
+        [RegularExpression(@"^[6-9]\d{9}$", ErrorMessage = "Invalid phone number")]
+        public string PhoneNumber { get; set; } = "";
+
+        // Regex: Email validation
+        [Required]
+        [EmailAddress(ErrorMessage = "Invalid email format")]
+        public string Email { get; set; } = "";
+
+        // UC-7: Duplicate check logic
+        public override bool Equals(object? obj)
         {
-            if (obj == null || !(obj is ContactPerson))
-                return false;
-
-            ContactPerson other = (ContactPerson)obj;
+            if (obj is not ContactPerson other) return false;
             return FirstName == other.FirstName && LastName == other.LastName;
         }
 
         public override int GetHashCode()
         {
             return (FirstName + LastName).GetHashCode();
-        }
-
-        // UC-10: Clean printing
-        public override string ToString()
-        {
-            return $"{FirstName} {LastName} | {City} | {State} | {Zip} | {PhoneNumber}";
         }
     }
 }
