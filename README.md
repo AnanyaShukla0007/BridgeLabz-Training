@@ -695,3 +695,66 @@ Complex file-based systems.
 Project-level integration.
 
 ---
+
+## 📅 Day 35 — Design Principles, Design Patterns & Multi-Threading
+
+**Date:** 02/02/2026
+
+### 🧩 What I Learned
+
+* SOLID design principles
+* Object-oriented design principles
+* Common design patterns and their use cases
+* Thread creation and lifecycle in C#
+* Synchronization and multi-threaded execution concepts
+
+### 🧪 Scenario-Based Problems
+
+* Multi-threading assignment
+
+### 🧭 What’s Next
+
+Database management systems and relational concepts.
+
+---
+
+## 📅 Day 36 — RDBMS, SQL Server & Normalization
+
+**Date:** 04/02/2026
+
+### 🧩 What I Learned
+
+* RDBMS fundamentals
+* Database normalization
+* DDL, DML, DCL commands
+* SQL Server basics
+
+### 🧪 Scenario-Based Problems
+
+* DBMS submission
+
+### 🧭 What’s Next
+
+Advanced MSSQL programming concepts.
+
+---
+
+## 📅 Day 37 — MSSQL Programming Concepts
+
+**Date:** 05/02/2026
+
+### 🧩 What I Learned
+
+* Stored procedures
+* Functions
+* Views
+* Triggers
+* Query optimization concepts
+
+### 🧪 Scenario-Based Problems
+
+* SQL programming exercises
+
+### 🧭 What’s Next
+
+Integration of C# applications with database systems.
