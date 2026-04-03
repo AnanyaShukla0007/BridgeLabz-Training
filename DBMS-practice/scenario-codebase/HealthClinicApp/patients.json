@@ -1,0 +1,38 @@
+[
+  {
+    "PatientId": 1,
+    "Name": "ana",
+    "DateOfBirth": "2003-12-26T00:00:00",
+    "Phone": "9876543210",
+    "Email": "ana@gla.ac.in",
+    "Address": "Agra",
+    "Pincode": "282001",
+    "BloodGroup": "A\u002B",
+    "RegisteredAt": "2026-02-13T10:38:59.8297009+05:30",
+    "Visits": []
+  },
+  {
+    "PatientId": 2,
+    "Name": "Sahil",
+    "DateOfBirth": "1998-03-22T00:00:00",
+    "Phone": "9876543210",
+    "Email": "S@gmail.com",
+    "Address": "asdfgh",
+    "Pincode": "12342",
+    "BloodGroup": "A\u002B",
+    "RegisteredAt": "2026-02-13T11:43:29.0229979+05:30",
+    "Visits": []
+  },
+  {
+    "PatientId": 3,
+    "Name": "Ananya",
+    "DateOfBirth": "2003-11-26T00:00:00",
+    "Phone": "9123456780",
+    "Email": "ananya@gmail.com",
+    "Address": "agra",
+    "Pincode": "282007",
+    "BloodGroup": "A\u002B",
+    "RegisteredAt": "2026-02-15T00:11:21.8342653+05:30",
+    "Visits": []
+  }
+]
