@@ -1,0 +1,14 @@
+namespace ParcelTracker
+{
+    internal class StageNode
+    {
+        public ParcelStage Data;
+        public StageNode? Next;
+
+        public StageNode(ParcelStage stage)
+        {
+            Data = stage;
+            Next = null;
+        }
+    }
+}
