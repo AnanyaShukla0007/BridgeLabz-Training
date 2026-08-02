@@ -1,0 +1,464 @@
+**Strings** 
+
+https://www.hackerrank.com/challenges/separate-the-numbers/problem?isFullScreen=true
+
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+using System;
+
+class Result
+{
+    /*
+     * Complete the 'separateNumbers' function below.
+     *
+     * The function accepts STRING s as parameter.
+     */
+
+    public static void separateNumbers(string s)
+    {
+        // A beautiful string cannot start with 0
+        if (s[0] == '0')
+        {
+            Console.WriteLine("NO");
+            return;
+        }
+
+        int n = s.Length;
+
+        for (int len = 1; len <= n / 2; len++)
+        {
+            long first = Convert.ToInt64(s.Substring(0, len));
+            long current = first;
+
+            StringBuilder sb = new StringBuilder();
+
+            while (sb.Length < n)
+            {
+                sb.Append(current);
+                current++;
+            }
+
+            if (sb.ToString() == s)
+            {
+                Console.WriteLine("YES " + first);
+                return;
+            }
+        }
+
+        Console.WriteLine("NO");
+    }
+}
+
+class Solution
+{
+    public static void Main(string[] args)
+    {
+        int q = Convert.ToInt32(Console.ReadLine().Trim());
+
+        for (int qItr = 0; qItr < q; qItr++)
+        {
+            string s = Console.ReadLine();
+
+            Result.separateNumbers(s);
+        }
+    }
+}
+
+
+https://www.hackerrank.com/challenges/camelcase/problem?isFullScreen=true
+
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+using System;
+
+class Result
+{
+    /*
+     * Complete the 'camelcase' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts STRING s as parameter.
+     */
+
+    public static int camelcase(string s)
+    {
+        if (string.IsNullOrEmpty(s))
+        {
+            return 0;
+        }
+
+        int count = 1;
+
+        foreach (char ch in s)
+        {
+            if (char.IsUpper(ch))
+            {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+
+class Solution
+{
+    public static void Main(string[] args)
+    {
+        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+
+        string s = Console.ReadLine();
+
+        int result = Result.camelcase(s);
+
+        textWriter.WriteLine(result);
+
+        textWriter.Flush();
+        textWriter.Close();
+    }
+}
+
+
+https://www.hackerrank.com/challenges/maximum-palindromes/problem?isFullScreen=true
+
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+using System;
+
+class Result
+{
+    const int MOD = 1000000007;
+
+    static string str;
+    static int[,] prefix;
+    static long[] fact;
+    static long[] invFact;
+
+    /*
+     * Complete the 'initialize' function below.
+     *
+     * The function accepts STRING s as parameter.
+     */
+
+    public static void initialize(string s)
+    {
+        str = s;
+        int n = s.Length;
+
+        // Prefix frequency array
+        prefix = new int[n + 1, 26];
+
+        for (int i = 1; i <= n; i++)
+        {
+            for (int j = 0; j < 26; j++)
+            {
+                prefix[i, j] = prefix[i - 1, j];
+            }
+
+            prefix[i, s[i - 1] - 'a']++;
+        }
+
+        // Factorials
+        fact = new long[n + 1];
+        invFact = new long[n + 1];
+
+        fact[0] = 1;
+
+        for (int i = 1; i <= n; i++)
+        {
+            fact[i] = (fact[i - 1] * i) % MOD;
+        }
+
+        invFact[n] = Power(fact[n], MOD - 2);
+
+        for (int i = n - 1; i >= 0; i--)
+        {
+            invFact[i] = (invFact[i + 1] * (i + 1)) % MOD;
+        }
+    }
+
+    /*
+     * Complete the 'answerQuery' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts following parameters:
+     *  1. INTEGER l
+     *  2. INTEGER r
+     */
+
+    public static int answerQuery(int l, int r)
+    {
+        int[] freq = new int[26];
+
+        for (int i = 0; i < 26; i++)
+        {
+            freq[i] = prefix[r, i] - prefix[l - 1, i];
+        }
+
+        int pairs = 0;
+        int odd = 0;
+
+        foreach (int f in freq)
+        {
+            pairs += f / 2;
+
+            if (f % 2 == 1)
+            {
+                odd++;
+            }
+        }
+
+        long ans = fact[pairs];
+
+        foreach (int f in freq)
+        {
+            ans = (ans * invFact[f / 2]) % MOD;
+        }
+
+        if (odd > 0)
+        {
+            ans = (ans * odd) % MOD;
+        }
+
+        return (int)ans;
+    }
+
+    static long Power(long a, long b)
+    {
+        long result = 1;
+
+        while (b > 0)
+        {
+            if ((b & 1) == 1)
+            {
+                result = (result * a) % MOD;
+            }
+
+            a = (a * a) % MOD;
+            b >>= 1;
+        }
+
+        return result;
+    }
+}
+
+class Solution
+{
+    public static void Main(string[] args)
+    {
+        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+
+        string s = Console.ReadLine();
+
+        Result.initialize(s);
+
+        int q = Convert.ToInt32(Console.ReadLine().Trim());
+
+        for (int qItr = 0; qItr < q; qItr++)
+        {
+            string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+
+            int l = Convert.ToInt32(firstMultipleInput[0]);
+
+            int r = Convert.ToInt32(firstMultipleInput[1]);
+
+            int result = Result.answerQuery(l, r);
+
+            textWriter.WriteLine(result);
+        }
+
+        textWriter.Flush();
+        textWriter.Close();
+    }
+}
+
+
+https://www.hackerrank.com/challenges/common-child/problem?isFullScreen=true
+
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+using System;
+
+class Result
+{
+    /*
+     * Complete the 'commonChild' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts following parameters:
+     *  1. STRING s1
+     *  2. STRING s2
+     */
+
+    public static int commonChild(string s1, string s2)
+    {
+        int n = s1.Length;
+
+        int[,] dp = new int[n + 1, n + 1];
+
+        for (int i = 1; i <= n; i++)
+        {
+            for (int j = 1; j <= n; j++)
+            {
+                if (s1[i - 1] == s2[j - 1])
+                {
+                    dp[i, j] = dp[i - 1, j - 1] + 1;
+                }
+                else
+                {
+                    dp[i, j] = Math.Max(dp[i - 1, j], dp[i, j - 1]);
+                }
+            }
+        }
+
+        return dp[n, n];
+    }
+}
+
+class Solution
+{
+    public static void Main(string[] args)
+    {
+        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+
+        string s1 = Console.ReadLine();
+
+        string s2 = Console.ReadLine();
+
+        int result = Result.commonChild(s1, s2);
+
+        textWriter.WriteLine(result);
+
+        textWriter.Flush();
+        textWriter.Close();
+    }
+}
+
+
+https://www.hackerrank.com/challenges/build-a-string/problem?isFullScreen=true
+
+https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem?isFullScreen=true
+
+
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+using System;
+
+class Result
+{
+    /*
+     * Complete the 'sherlockAndAnagrams' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts STRING s as parameter.
+     */
+
+    public static int sherlockAndAnagrams(string s)
+    {
+        Dictionary<string, int> map = new Dictionary<string, int>();
+
+        int n = s.Length;
+
+        for (int len = 1; len <= n; len++)
+        {
+            for (int i = 0; i <= n - len; i++)
+            {
+                char[] arr = s.Substring(i, len).ToCharArray();
+                Array.Sort(arr);
+
+                string key = new string(arr);
+
+                if (map.ContainsKey(key))
+                {
+                    map[key]++;
+                }
+                else
+                {
+                    map[key] = 1;
+                }
+            }
+        }
+
+        int count = 0;
+
+        foreach (var item in map)
+        {
+            int freq = item.Value;
+            count += freq * (freq - 1) / 2;
+        }
+
+        return count;
+    }
+}
+
+class Solution
+{
+    public static void Main(string[] args)
+    {
+        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+
+        int q = Convert.ToInt32(Console.ReadLine().Trim());
+
+        for (int qItr = 0; qItr < q; qItr++)
+        {
+            string s = Console.ReadLine();
+
+            int result = Result.sherlockAndAnagrams(s);
+
+            textWriter.WriteLine(result);
+        }
+
+        textWriter.Flush();
+        textWriter.Close();
+    }
+}
